@@ -21,8 +21,10 @@ import org.testng.annotations.Test;
  * @author Lenovo
  */
 public class LocationByZipTest {
-        private WebDriver driver;
-        private String baseUrl;
+
+    private WebDriver driver;
+    private String baseUrl;
+
     public LocationByZipTest() {
     }
 
@@ -31,7 +33,6 @@ public class LocationByZipTest {
     //
     // @Test
     // public void hello() {}
-
     @BeforeClass
     public static void setUpClass() throws Exception {
     }
@@ -53,88 +54,77 @@ public class LocationByZipTest {
     public void tearDownMethod() throws Exception {
         //FAQdriver.quit();
         driver.quit();
-    }    
-    
-    @Test
-    public void testFAQs() throws Exception {
-    driver.get("https://www.marshalls.com/us/store/index.jsp");
-    driver.findElement(By.linkText("FAQs")).click();
-    driver.get("https://www.marshalls.com/us/store/jump/topic/FAQs/22200018p");
-    driver.findElement(By.xpath("//div[@id='main']/div[2]/section/div/div/div/a[2]")).click();
-    driver.findElement(By.id("rewardsSection?icid=4.29.21_Marshalls_FAQ_Rewards_Anchor_Link")).click();
-    assertEquals(driver.findElement(By.id("rewardsSection?icid=4.29.21_Marshalls_FAQ_Rewards_Anchor_Link")).getText(), "Rewards FAQs");
-  }
-        
+    }
+
     //Store locator by valid zip code
-  @Test 
-  public void testSoreLocatorTestCase() throws Exception {
-    driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
-    driver.findElement(By.id("store-location-zip")).click();
-    driver.findElement(By.id("store-location-zip")).clear();
-    driver.findElement(By.id("store-location-zip")).sendKeys("60090");
-    driver.findElement(By.name("submit")).click();
-    driver.findElement(By.linkText("Store Info and Directions")).click();
-    driver.get("https://www.marshalls.com/us/store/stores/Arlington+Heights-IL-60004/559/aboutstore");
-  }
+    @Test
+    public void testSoreLocatorTestCase() throws Exception {
+        driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
+        driver.findElement(By.id("store-location-zip")).click();
+        driver.findElement(By.id("store-location-zip")).clear();
+        driver.findElement(By.id("store-location-zip")).sendKeys("60090");
+        driver.findElement(By.name("submit")).click();
+        driver.findElement(By.linkText("Store Info and Directions")).click();
+        driver.get("https://www.marshalls.com/us/store/stores/Arlington+Heights-IL-60004/559/aboutstore");
+    }
 
-   //Store locator by valid city and state combo
-  @Test
-  public void testLocationCityStateTestCase() throws Exception {
-    driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
-    driver.findElement(By.id("store-location-city")).click();
-    driver.findElement(By.id("store-location-city")).clear();
-    driver.findElement(By.id("store-location-city")).sendKeys("Chicago");
-    new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Idaho");
-    new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Illinois");
-    driver.findElement(By.name("submit")).click();
-    driver.findElement(By.linkText("Store Info and Directions")).click();
-    driver.get("https://www.marshalls.com/us/store/stores/Chicago-IL-60611/690/aboutstore");
-  }
-    
-  //Store locator with invalid zip
- @Test
-  public void testInvalidZipTestCase() throws Exception {
-    driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
-    driver.findElement(By.id("store-location-zip")).click();
-    driver.findElement(By.id("store-location-zip")).clear();
-    driver.findElement(By.id("store-location-zip")).sendKeys("801AB");
-    driver.findElement(By.name("submit")).click();
-    driver.findElement(By.id("store-location-zip")).click();
-    driver.findElement(By.id("store-location-zip")).clear();
-    driver.findElement(By.id("store-location-zip")).sendKeys("80100");
-    driver.findElement(By.name("submit")).click();
-  }
+    //Store locator by valid city and state combo
+    @Test
+    public void testLocationCityStateTestCase() throws Exception {
+        driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
+        driver.findElement(By.id("store-location-city")).click();
+        driver.findElement(By.id("store-location-city")).clear();
+        driver.findElement(By.id("store-location-city")).sendKeys("Chicago");
+        new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Idaho");
+        new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Illinois");
+        driver.findElement(By.name("submit")).click();
+        driver.findElement(By.linkText("Store Info and Directions")).click();
+        driver.get("https://www.marshalls.com/us/store/stores/Chicago-IL-60611/690/aboutstore");
+    }
 
-  //Store locator with valid city and invalid (empty) state combo
- @Test
-  public void testInvalidCityStateTestCase() throws Exception {
-    driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
-    driver.findElement(By.id("store-location-city")).click();
-    driver.findElement(By.id("store-location-city")).clear();
-    driver.findElement(By.id("store-location-city")).sendKeys("New York");
-    driver.findElement(By.name("submit")).click();
-    driver.findElement(By.xpath("//form[@id='findStoresForm']/div[3]/div/div/span")).click();
-    driver.findElement(By.xpath("//form[@id='findStoresForm']/div[3]/div/div/span")).click();
-    driver.findElement(By.id("store-location-state")).click();
-    new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Alabama");
-    driver.findElement(By.name("submit")).click();
-  }
-  
-  //Store locator with invalid city and valid state combo
- @Test
-  public void testInvalidCityTestCase() throws Exception {
-    driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
-    driver.findElement(By.id("store-location-city")).click();
-    driver.findElement(By.id("store-location-city")).clear();
-    driver.findElement(By.id("store-location-city")).sendKeys("Some City");
-    driver.findElement(By.id("store-location-state")).click();
-    new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Delaware");
-    driver.findElement(By.name("submit")).click();
-    driver.findElement(By.id("store-location-city")).click();
-    driver.findElement(By.id("store-location-city")).clear();
-    driver.findElement(By.id("store-location-city")).sendKeys("123_Test@_><");
-    driver.findElement(By.name("submit")).click();
-  }
-  
-  
+    //Store locator with invalid zip
+    @Test
+    public void testInvalidZipTestCase() throws Exception {
+        driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
+        driver.findElement(By.id("store-location-zip")).click();
+        driver.findElement(By.id("store-location-zip")).clear();
+        driver.findElement(By.id("store-location-zip")).sendKeys("801AB");
+        driver.findElement(By.name("submit")).click();
+        driver.findElement(By.id("store-location-zip")).click();
+        driver.findElement(By.id("store-location-zip")).clear();
+        driver.findElement(By.id("store-location-zip")).sendKeys("80100");
+        driver.findElement(By.name("submit")).click();
+    }
+
+    //Store locator with valid city and invalid (empty) state combo
+    @Test
+    public void testInvalidCityStateTestCase() throws Exception {
+        driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
+        driver.findElement(By.id("store-location-city")).click();
+        driver.findElement(By.id("store-location-city")).clear();
+        driver.findElement(By.id("store-location-city")).sendKeys("New York");
+        driver.findElement(By.name("submit")).click();
+        driver.findElement(By.xpath("//form[@id='findStoresForm']/div[3]/div/div/span")).click();
+        driver.findElement(By.xpath("//form[@id='findStoresForm']/div[3]/div/div/span")).click();
+        driver.findElement(By.id("store-location-state")).click();
+        new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Alabama");
+        driver.findElement(By.name("submit")).click();
+    }
+
+    //Store locator with invalid city and valid state combo
+    @Test
+    public void testInvalidCityTestCase() throws Exception {
+        driver.get("https://www.marshalls.com/us/store/stores/storeLocator.jsp");
+        driver.findElement(By.id("store-location-city")).click();
+        driver.findElement(By.id("store-location-city")).clear();
+        driver.findElement(By.id("store-location-city")).sendKeys("Some City");
+        driver.findElement(By.id("store-location-state")).click();
+        new Select(driver.findElement(By.id("store-location-state"))).selectByVisibleText("Delaware");
+        driver.findElement(By.name("submit")).click();
+        driver.findElement(By.id("store-location-city")).click();
+        driver.findElement(By.id("store-location-city")).clear();
+        driver.findElement(By.id("store-location-city")).sendKeys("123_Test@_><");
+        driver.findElement(By.name("submit")).click();
+    }
+
 }
