@@ -1,0 +1,1986 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 27, 2024 03:28:30 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add item to My Bag</p>
+            <p class="text-sm">
+              <span>15:28:31 PM</span> / <span>00:01:304</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Add item to My Bag</h5>
+<span class='badge badge-success'>02.27.2024 15:28:31</span>
+<span class='badge badge-danger'>02.27.2024 15:28:32</span>
+<span class='badge badge-default'>00:01:304</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Add item to my bag</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.AddToBag.driver_is_open()">
+                <span>Given driver is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.AddToBag.driver_is_open(AddToBag.java:20)
+	at ✽.driver is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/AddToBag.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.AddToBag.product_page_is_open()">
+                <span>And product page is open</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.AddToBag.i_click_add()">
+                <span>When I click add</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.AddToBag.item_added_to_my_bag()">
+                <span>Then item added to my bag</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">App Store</p>
+            <p class="text-sm">
+              <span>15:28:32 PM</span> / <span>00:00:866</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">App Store</h5>
+<span class='badge badge-success'>02.27.2024 15:28:32</span>
+<span class='badge badge-danger'>02.27.2024 15:28:33</span>
+<span class='badge badge-default'>00:00:866</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Download it On The App Store</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.AppStore.my_driver_is_open_and_main_page_is_open()">
+                <span>Given my driver is open and main page is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.AppStore.my_driver_is_open_and_main_page_is_open(AppStore.java:19)
+	at ✽.my driver is open and main page is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/AppStore.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.AppStore.click_on_app_store()">
+                <span>When click on app store</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.AppStore.app_store_page_visible()">
+                <span>Then app store page visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test marshalls store locator search with valid city and state combo</p>
+            <p class="text-sm">
+              <span>15:28:33 PM</span> / <span>00:00:880</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">feature to test marshalls store locator search with valid city and state combo</h5>
+<span class='badge badge-success'>02.27.2024 15:28:33</span>
+<span class='badge badge-danger'>02.27.2024 15:28:34</span>
+<span class='badge badge-default'>00:00:880</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>validate store locator by valid city and state combo search is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.CityStateSearch.my_browser_is_open()">
+                <span>Given my browser is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.CityStateSearch.my_browser_is_open(CityStateSearch.java:21)
+	at ✽.my browser is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/CityStateSearch.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.CityStateSearch.user_is_on_marshalls_store_locator_search_page()">
+                <span>And user is on marshalls store locator search page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.CityStateSearch.the_valid_city()">
+                <span>When the valid city</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.CityStateSearch.state_is_entered()">
+                <span>And state is entered</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.CityStateSearch.user_clicks_search_button()">
+                <span>And user clicks search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.CityStateSearch.then_related_results_are_visible()">
+                <span>Then then related results are visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Frequently Asked Questions</p>
+            <p class="text-sm">
+              <span>15:28:34 PM</span> / <span>00:00:885</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Frequently Asked Questions</h5>
+<span class='badge badge-success'>02.27.2024 15:28:34</span>
+<span class='badge badge-danger'>02.27.2024 15:28:35</span>
+<span class='badge badge-default'>00:00:885</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log fail-bg mr-2">Fail</span>Navigate to faq</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.FrequentAskQuestion.my_driver_is_open()">
+                <span>Given my driver is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.FrequentAskQuestion.my_driver_is_open(FrequentAskQuestion.java:19)
+	at ✽.my driver is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/FrequentAskQuestion.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.FrequentAskQuestion.marshalls_home_page_is_open()">
+                <span>And marshalls home page is open</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.FrequentAskQuestion.i_click_in_link()">
+                <span>When I click in link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.FrequentAskQuestion.faq_is_open()">
+                <span>Then faq is open</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Gift card</p>
+            <p class="text-sm">
+              <span>15:28:35 PM</span> / <span>00:00:899</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Gift card</h5>
+<span class='badge badge-success'>02.27.2024 15:28:35</span>
+<span class='badge badge-danger'>02.27.2024 15:28:36</span>
+<span class='badge badge-default'>00:00:899</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log fail-bg mr-2">Fail</span>Add gift card to bag</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.GiftCard.wed_driver_is_open()">
+                <span>Given wed driver is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.GiftCard.wed_driver_is_open(GiftCard.java:19)
+	at ✽.wed driver is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/GiftCard.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.GiftCard.store_main_page_is_open()">
+                <span>And store main page is open</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.GiftCard.we_click_gift_card()">
+                <span>When we click gift card</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.GiftCard.gift_card_page_visible()">
+                <span>Then gift card page visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Get It On Google Play</p>
+            <p class="text-sm">
+              <span>15:28:36 PM</span> / <span>00:00:923</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Get It On Google Play</h5>
+<span class='badge badge-success'>02.27.2024 15:28:36</span>
+<span class='badge badge-danger'>02.27.2024 15:28:36</span>
+<span class='badge badge-default'>00:00:923</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log fail-bg mr-2">Fail</span>navigate ot Get It On Google Play</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.GooglePlay.driver_is_opent_and_home_page_is_visible()">
+                <span>Given driver is opent and home page is visible</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.GooglePlay.driver_is_opent_and_home_page_is_visible(GooglePlay.java:19)
+	at ✽.driver is opent and home page is visible(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/GooglePlay.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.GooglePlay.now_click_on_link()">
+                <span>When now click on link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.GooglePlay.google_play_is_visible()">
+                <span>Then google play is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test marshalls store locator search with invalid city and state combo</p>
+            <p class="text-sm">
+              <span>15:28:37 PM</span> / <span>00:01:770</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">feature to test marshalls store locator search with invalid city and state combo</h5>
+<span class='badge badge-success'>02.27.2024 15:28:37</span>
+<span class='badge badge-danger'>02.27.2024 15:28:38</span>
+<span class='badge badge-default'>00:01:770</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log fail-bg mr-2">Fail</span>validate store locator by invalid city and state combo search is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.InvalidCityState.user_browser_is_open()">
+                <span>Given user browser is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.InvalidCityState.user_browser_is_open(InvalidCityState.java:20)
+	at ✽.user browser is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/InvalidCityState.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.it_is_on_marshalls_store_locator_search_page()">
+                <span>And it is on marshalls store locator search page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.the_city(java.lang.String)">
+                <span>When the "Boston" city</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.state_is_entered(java.lang.String)">
+                <span>And state "Ontario" is entered</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.search_button_clicked()">
+                <span>And search button clicked</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.verify_the_in_step(java.lang.String)">
+                <span>Then verify the "stores were found" in step</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log fail-bg mr-2">Fail</span>validate store locator by invalid city and state combo search is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.InvalidCityState.user_browser_is_open()">
+                <span>Given user browser is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.InvalidCityState.user_browser_is_open(InvalidCityState.java:20)
+	at ✽.user browser is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/InvalidCityState.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.it_is_on_marshalls_store_locator_search_page()">
+                <span>And it is on marshalls store locator search page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.the_city(java.lang.String)">
+                <span>When the "Lima" city</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.state_is_entered(java.lang.String)">
+                <span>And state "State" is entered</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.search_button_clicked()">
+                <span>And search button clicked</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidCityState.verify_the_in_step(java.lang.String)">
+                <span>Then verify the "provide a valid" in step</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test marshalls store locator search with invalid zip</p>
+            <p class="text-sm">
+              <span>15:28:38 PM</span> / <span>00:00:873</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">feature to test marshalls store locator search with invalid zip</h5>
+<span class='badge badge-success'>02.27.2024 15:28:38</span>
+<span class='badge badge-danger'>02.27.2024 15:28:39</span>
+<span class='badge badge-default'>00:00:873</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="53"><span class="badge log fail-bg mr-2">Fail</span>Validate store locator by invalid zip search is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.InvalidZip.a_browser_is_on_marshalls_store_locator_search_page()">
+                <span>Given a browser is on marshalls store locator search page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.InvalidZip.a_browser_is_on_marshalls_store_locator_search_page(InvalidZip.java:19)
+	at ✽.a browser is on marshalls store locator search page(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/InvalidZipSearchTest.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidZip.the_invalid_zip_code_is_entered()">
+                <span>When the invalid zip code is entered</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidZip.user_clicks_search_button()">
+                <span>And User clicks search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.InvalidZip.the_related_results_are_visible()">
+                <span>Then the related results are visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test search multiple items</p>
+            <p class="text-sm">
+              <span>15:28:39 PM</span> / <span>00:01:790</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">feature to test search multiple items</h5>
+<span class='badge badge-success'>02.27.2024 15:28:39</span>
+<span class='badge badge-danger'>02.27.2024 15:28:41</span>
+<span class='badge badge-default'>00:01:790</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log fail-bg mr-2">Fail</span>Search for multiple invalid items</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>Search for multiple invalid items</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user on home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.MultiItems.user_on_home_page(MultiItems.java:20)
+	at ✽.user on home page(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/MiltiItems.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Add "drill" to search</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then userb expects "searched" on page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="64"><span class="badge log fail-bg mr-2">Fail</span>Search for multiple invalid items</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user on home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.MultiItems.user_on_home_page(MultiItems.java:20)
+	at ✽.user on home page(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/MiltiItems.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When Add "abc123" to search</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then userb expects "no result" on page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="68"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test search items</p>
+            <p class="text-sm">
+              <span>15:28:41 PM</span> / <span>00:01:767</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">feature to test search items</h5>
+<span class='badge badge-success'>02.27.2024 15:28:41</span>
+<span class='badge badge-danger'>02.27.2024 15:28:43</span>
+<span class='badge badge-default'>00:01:767</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=68</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="69"><span class="badge log fail-bg mr-2">Fail</span>Irrelevant items are displayed after entering in Search box</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.NoResult.user_is_on_home_page()">
+                <span>Given User is on home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.NoResult.user_is_on_home_page(NoResult.java:20)
+	at ✽.User is on home page(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/NoResult.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.NoResult.user_searches_irrelevant_items_in_a_search_box()">
+                <span>When User searches irrelevant items in a search box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.NoResult.user_clicks_search()">
+                <span>And User clicks search</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.NoResult.user_is_shown_no_results()">
+                <span>Then User is shown no results</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="74"><span class="badge log fail-bg mr-2">Fail</span>Relevant items are displayed after entering in Search box</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.SearchItem.browser_is_open()">
+                <span>Given home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.SearchItem.browser_is_open(SearchItem.java:20)
+	at ✽.home page(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/SearchItem.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.SearchItem.user_inputs_relevant_items_in_a_search_bar()">
+                <span>And User inputs relevant items in a search bar</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.SearchItem.user_searches_items_in_a_search_box()">
+                <span>When User searches items in a search box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.SearchItem.hits_enter()">
+                <span>And clicks search</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.SearchItem.user_is_shown_all_valid_items()">
+                <span>Then User is shown all valid items</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test marshalls store locator search</p>
+            <p class="text-sm">
+              <span>15:28:43 PM</span> / <span>00:00:920</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">feature to test marshalls store locator search</h5>
+<span class='badge badge-success'>02.27.2024 15:28:43</span>
+<span class='badge badge-danger'>02.27.2024 15:28:44</span>
+<span class='badge badge-default'>00:00:920</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log fail-bg mr-2">Fail</span>Validate store locator by zip search is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinition.StoreLocatorByZip.browser_is_open()">
+                <span>Given browser is open</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.70 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B6C92142+3514994]
+	(No symbol) [0x00007FF7B68B0CE2]
+	(No symbol) [0x00007FF7B67576AA]
+	(No symbol) [0x00007FF7B67917E2]
+	(No symbol) [0x00007FF7B6790ADD]
+	(No symbol) [0x00007FF7B678B9DF]
+	(No symbol) [0x00007FF7B6787F52]
+	(No symbol) [0x00007FF7B67D0AB4]
+	(No symbol) [0x00007FF7B67C5D93]
+	(No symbol) [0x00007FF7B6794BDC]
+	(No symbol) [0x00007FF7B6795C64]
+	GetHandleVerifier [0x00007FF7B6CBE16B+3695259]
+	GetHandleVerifier [0x00007FF7B6D16737+4057191]
+	GetHandleVerifier [0x00007FF7B6D0E4E3+4023827]
+	GetHandleVerifier [0x00007FF7B69E04F9+689705]
+	(No symbol) [0x00007FF7B68BC048]
+	(No symbol) [0x00007FF7B68B8044]
+	(No symbol) [0x00007FF7B68B81C9]
+	(No symbol) [0x00007FF7B68A88C4]
+	BaseThreadInitThunk [0x00007FF851CE257D+29]
+	RtlUserThreadStart [0x00007FF8533EAA58+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepDefinition.StoreLocatorByZip.browser_is_open(StoreLocatorByZip.java:20)
+	at ✽.browser is open(file:///C:/Users/Lenovo/eclipse-workspace/teamautoproject/src/test/resources/Features/StoreLocatorZipTest.feature:3)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StoreLocatorByZip.user_is_on_marshalls_store_locator_search_page()">
+                <span>And User is on marshalls store locator search page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StoreLocatorByZip.user_enters_a_zip_code_in_a_search_box()">
+                <span>When User enters a zip code in a search box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StoreLocatorByZip.hits_search_button()">
+                <span>And hits search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinition.StoreLocatorByZip.user_is_navigated_to_search_feature()">
+                <span>Then User is navigated to search feature</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.SessionNotCreatedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Given driver is open</a>
+<div class="">
+<span class="badge badge-default">Add item to My Bag.Add item to my bag.Given driver is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='9'>Given my driver is open and main page is open</a>
+<div class="">
+<span class="badge badge-default">App Store.Download it On The App Store.Given my driver is open and main page is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='14'>Given my browser is open</a>
+<div class="">
+<span class="badge badge-default">feature to test marshalls store locator search with valid city and state combo.validate store locator by valid city and state combo search is working.Given my browser is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='22'>Given my driver is open</a>
+<div class="">
+<span class="badge badge-default">Frequently Asked Questions.Navigate to faq.Given my driver is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='28'>Given wed driver is open</a>
+<div class="">
+<span class="badge badge-default">Gift card.Add gift card to bag.Given wed driver is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='34'>Given driver is opent and home page is visible</a>
+<div class="">
+<span class="badge badge-default">Get It On Google Play.navigate ot Get It On Google Play.Given driver is opent and home page is visible</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='37' id='39'>Given user browser is open</a>
+<div class="">
+<span class="badge badge-default">feature to test marshalls store locator search with invalid city and state combo.validate store locator by invalid city and state combo search is working.Given user browser is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='37' id='46'>Given user browser is open</a>
+<div class="">
+<span class="badge badge-default">feature to test marshalls store locator search with invalid city and state combo.validate store locator by invalid city and state combo search is working.Given user browser is open</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='52' id='54'>Given a browser is on marshalls store locator search page</a>
+<div class="">
+<span class="badge badge-default">feature to test marshalls store locator search with invalid zip.Validate store locator by invalid zip search is working.Given a browser is on marshalls store locator search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='61'>Given user on home page</a>
+<div class="">
+<span class="badge badge-default">feature to test search multiple items.Search for multiple invalid items.Given user on home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='65'>Given user on home page</a>
+<div class="">
+<span class="badge badge-default">feature to test search multiple items.Search for multiple invalid items.Given user on home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='68' id='70'>Given User is on home page</a>
+<div class="">
+<span class="badge badge-default">feature to test search items.Irrelevant items are displayed after entering in Search box.Given User is on home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='68' id='75'>Given home page</a>
+<div class="">
+<span class="badge badge-default">feature to test search items.Relevant items are displayed after entering in Search box.Given home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='80' id='82'>Given browser is open</a>
+<div class="">
+<span class="badge badge-default">feature to test marshalls store locator search.Validate store locator by zip search is working.Given browser is open</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 27, 2024 03:28:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 27, 2024 03:28:44 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>11</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>11</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>14</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='23%'><b>14</b> steps failed,
+<b>46</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Add item to My Bag":1.304,"App Store":0.866,"feature to test marshalls store locator search with valid city and state combo":0.88,"Frequently Asked Questions":0.885,"Gift card":0.899,"Get It On Google Play":0.923,"feature to test marshalls store locator search with invalid city and state combo":1.77,"feature to test marshalls store locator search with invalid zip":0.873,"feature to test search multiple items":1.79,"feature to test search items":1.767,"feature to test marshalls store locator search":0.92
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 11,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 14,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 14,
+warningGrandChild: 0,
+skipGrandChild: 46,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

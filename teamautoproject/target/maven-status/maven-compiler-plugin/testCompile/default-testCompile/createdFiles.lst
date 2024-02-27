@@ -1,0 +1,13 @@
+stepDefinition\InvalidZip.class
+stepDefinition\GooglePlay.class
+stepDefinition\AddToBag.class
+stepDefinition\InvalidCityState.class
+stepDefinition\FrequentAskQuestion.class
+stepDefinition\CityStateSearch.class
+stepDefinition\AppStore.class
+stepDefinition\MultiItems.class
+stepDefinition\NoResult.class
+stepDefinition\GiftCard.class
+stepDefinition\StoreLocatorByZip.class
+stepDefinition\MyRunner.class
+stepDefinition\SearchItem.class
